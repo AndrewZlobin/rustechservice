@@ -1,0 +1,398 @@
+@import "bull_slider-upgrade.css";
+@import "bull_wide-desktop.css" screen and (min-width:1200px);
+@import "bull_desktop.css" screen and (max-width: 1199.98px);
+@import "bull_tablet.css" screen and (max-width: 991.98px);
+@import "bull_mobile_landscape.css" screen and (max-width: 767.98px);
+@import "bull_mobile_portrait.css" screen and (max-width: 575.98px);
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/ProximaNova-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/ProximaNova-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('fonts/ProximaNova-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/ProximaNova-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/ProximaNova-Bold.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+/*Section header (navigation, logos, big image)*/
+/*Bull logo at top head*/
+
+.bull-top {
+    width: 100%;
+    z-index: 10000;
+}
+
+.bull-top__logo {
+    min-height: 54px;
+    background-color: #ffffff;
+    padding: 0 2rem 0;
+}
+
+.bull-top__logo-link {
+    max-height: 40px;
+}
+
+.bull-top__logo-image {
+    max-height: inherit;
+}
+
+/*Navigation menu*/
+.bull-top__nav {
+    grid-template-columns: 30% 70%;
+    max-height: 70px;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+.nav-left {
+    color: #414141;
+    border-top: 2px solid #414141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    max-height: inherit;
+}
+
+.nav-left__link {
+    color: #414141;
+    font-size: 275%;
+    font-family: "Proxima Nova Rg";
+}
+
+.nav-left__link:hover {
+    text-decoration: none;
+    color: #fbba05;
+}
+
+.nav-right {
+    background-color: #414141;
+    height: inherit;
+    max-height: inherit;
+}
+
+.nav-right__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 1fr) 25px;
+    position: relative;
+    height: inherit;
+    max-height: inherit;
+}
+
+.nav-right__list:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 100%;
+    transform: skew(-25deg);
+    left: -25px;
+    border-top: 2px solid #414141;
+}
+
+.nav-right__list-item {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right__list-item:hover {
+    cursor: pointer;
+    background-color: #fbba05;
+    transform: skew(-25deg);
+}
+
+.nav-right__list-item:hover > .nav-right__list-item__link {
+    transform: skew(25deg);
+}
+
+.nav-right__list-item__link {
+    text-decoration: none;
+    color: #666666;
+    font-size: 137%;
+    font-family: "Proxima Nova Rg";
+}
+
+.nav-right__list-item__link:hover {
+    text-decoration: none;
+    color: #252525;
+}
+
+.bull-top__image-container__image {
+    max-height: 716px;
+}
+
+/*Section with youtube video*/
+.bull-video-container {
+    padding: 7.5% 0 7.5%;
+    margin-bottom: 50px;
+}
+
+.bull-video-container__aside-left {
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+}
+.bull-video-container__aside-left iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bull-video-container__title {
+    font-family: "Arial";
+    font-size: 200%;
+}
+.bull-video-container__description {
+    font-family: "Proxima Nova Rg";
+    font-size: 140%;
+}
+
+.bull-video-container__button {
+    font-family: "Proxima Nova Rg";
+    font-size: 1.25rem;
+    padding: 10px 25px;
+}
+
+.bull-slider {
+    margin-bottom: 120px;
+}
+
+.bull-slider-for {
+    max-height: 50%;
+}
+
+.bull-slider-navigation,
+.bull-slider-nav {
+    background-color: #dfdfdf;
+}
+
+.bull-slider-navigation {
+    margin-bottom: 120px;
+}
+
+/*Section for bucket options*/
+
+.bull-bucket-options {
+    margin-bottom: 120px;
+}
+
+.bull-bucket-options__title {
+    font-family: "Proxima Nova Bold";
+    font-size: 250%;
+    margin-bottom: 40px;
+}
+
+.bull-bucket-options__description {
+    font-family: "Proxima Nova Rg";
+    font-size: 150%;
+    margin-bottom: 75px;
+}
+
+.bull-bucket-options__desc {
+    font-family: "Proxima Nova Rg";
+    font-size: 1rem;
+}
+
+.bull-bucket-options__list {
+    display: grid;
+    grid-gap: 15px;
+    margin-bottom: 75px;
+}
+
+.bull-bucket-options__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.bull-bucket-options__button > a {
+    font-family: "Proxima Nova Rg";
+    font-size: 1.25rem;
+    padding: 10px 25px;
+}
+
+.bull-industries {
+    margin-bottom: 90px;
+}
+
+.bull-industries__title,
+.bull-industries__description {
+    margin: 0 auto 0;
+    width: fit-content;
+}
+
+/*Section for industries*/
+
+.bull-industries__title {
+    font-family: "Proxima Nova Bold";
+    font-size: 200%;
+    margin-bottom: 40px;
+}
+
+.bull-industries__description {
+    font-family: "Proxima Nova Rg";
+    font-size: 150%;
+    margin-bottom: 75px;
+}
+
+.bull-industries__cards {
+    display: grid;
+}
+
+.bull-industries__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bull-industries__quote {
+    text-align: right;
+    font-family: "Proxima Nova Bold";
+    font-size: 1.185rem;
+}
+
+.bull-parallax {
+    max-height: 600px;
+    height: 100%;
+    background-image: url("../images/7.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 95px;
+}
+
+.bull-parallax__container {
+    height: 60vw;
+    max-height: inherit;
+    margin: 0 auto 0;
+}
+
+.bull-parallax__container-title {
+    font-family: "Proxima Nova Bold";
+    font-size: 215%;
+}
+
+.bull-parallax__container-description {
+    font-family: "Proxima Nova Rg";
+    font-size: 150%;
+}
+
+.bull-parallax__button {
+    font-family: "Proxima Nova Rg";
+    font-size: 1.25rem;
+    padding: 10px 25px;
+}
+
+/*Section with map and form*/
+.bull-footer__map-title,
+.bull-footer__form-title {
+    font-family: "Proxima Nova Bold";
+    font-size: 227.5%;
+}
+
+
+.bull-footer__map-interactive {
+    width: 100%;
+}
+
+.bull-footer__form-advise,
+.bull-footer__map-address {
+    font-family: "Proxima Nova Rg";
+    font-size: 107.5%;
+    margin-bottom: 30px;
+}
+
+.bull-footer__form-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 35px) 100px;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 28px;
+}
+
+.bull-footer__form-grid > label {
+    font-family: "Proxima Nova Rg";
+    font-size: 107.5%;
+    position: relative;
+    margin: 0;
+}
+
+.bull-footer__form-grid > label:after {
+    content: ':';
+    position: absolute;
+    right: 5px;
+}
+
+.bull-footer__form-grid > label:last-of-type {
+    align-self: flex-start;
+}
+
+.bull-footer__form-submit {
+    font-family: "Proxima Nova Bold";
+    font-size: 95%;
+    padding: 2.5% 15%;
+}
+
+.bull-contacts {
+    background-color: #252525;
+    padding-top: 50px;
+    height: 230px;
+    max-height: 230px;
+    border-bottom: 2px solid #7f7f7f;
+}
+
+.bull-contacts__logo {
+    font-family: "Proxima Nova Rg";
+    font-size: 135%;
+    margin-bottom: 40px;
+}
+
+.bull-contacts__list {
+    margin-bottom: 50px;
+}
+
+.bull-contacts__list-item__link {
+    font-family: "Proxima Nova Rg";
+    font-size: 100%;
+    color: #7f7f7f;
+}
+
+.bull-contacts__list-item__link:hover {
+    color: #fbba05;
+    text-decoration: none;
+}
+
+.bull-contacts__icons {
+    max-width: 10%;
+}
+
+.bull-contacts__icons > * {
+    color: #7f7f7f;
+}
+
+.bull-contacts__icons > *:hover {
+    color: #fbba05;
+    cursor: pointer;
+}
+
+.bull-all-rights {
+    background-color: #252525;
+    color: #7f7f7f;
+    padding: 25px 0 15px;
+}

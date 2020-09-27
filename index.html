@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="UTF-8">
+    <title>РУСТЕХСЕРВИС</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="__header__contacts d-flex flex-row justify-content-start align-items-center py-2 w-100 __special__padding">
+        <img alt="no phone" src="images/header-phone.png">
+        <p>8(499)123-45-67</p>
+        <img alt="no phone" src="images/header-email.png">
+        <p>email@rts.ru</p>
+    </header>
+    <nav class="row bg-white __special__padding sticky-top pt-4 pb-2" id="navbar">
+        <div class="col-6 col-md-3 px-0">
+            <a href="index.html">
+                <img src="images/logo.png" alt="alt" class="img-fluid">
+            </a>
+        </div>
+        <div class="offset-1 col-5 px-0 d-block d-md-none">
+            <div class="d-flex d-md-none justify-content-center align-items-center h-100">
+                <button type="button" class="btn btn-sm btn-outline-dark" id="show-navbar">☰</button>
+            </div>
+        </div>
+        <div class="offset-0 offset-md-1 col-12 col-md-8 px-0 d-md-block" id="navbar-elements">
+            <div class="d-flex
+                        flex-column flex-md-row
+                        align-items-end align-items-md-center
+                        justify-content-md-between
+                        h-100">
+                <div class="col-auto">
+                    <a class="text-decoration-none font-weight-bold text-black-50 hover-12" href="#navbar">ГЛАВНАЯ</a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-decoration-none font-weight-bold text-black-50 hover-12" href="#about_us">О НАС</a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-decoration-none font-weight-bold text-black-50 hover-12" href="#assortment">АССОРТИМЕНТ</a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-decoration-none font-weight-bold text-black-50 hover-12" href="#footer">КОНТАКТЫ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="rts-carousel" class="__header__carousel carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner __header__carousel">
+            <div class="__header__carousel carousel-item active">
+                <img class="__header__carousel" src="images/banner-1.jpg" alt="First slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="text-uppercase">Широкий ассортимент поставок</h5>
+                    <p class="text-uppercase">от метизов до жби изделий</p>
+                </div>
+            </div>
+            <div class="__header__carousel carousel-item">
+                <img class="__header__carousel" src="images/banner-2.jpg" alt="Second slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="text-uppercase">логистика по всей россии</h5>
+                    <p class="text-uppercase">многолетний опыт поставок от калининграда до благовещенска</p>
+                </div>
+            </div>
+            <div class="__header__carousel carousel-item">
+                <img class="__header__carousel" src="images/banner-3.jpg" alt="Third slide">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="text-uppercase">организация поставок</h5>
+                    <p class="text-uppercase">материально-технических ресурсов и оборудования по всей россии</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#rts-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#rts-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section id="main_section" class=" __main__container h-100 row mx-0 px-0">
+        <div class="col-12 h-100 px-0">
+            <div id="about_us" class="bg-white w-100 text-center py-2 __special__padding">
+                <h3 class="text-uppercase font-weight-bolder">О компании</h3>
+                <p class="mb-3">
+                    <strong>ООО «РТС»</strong> основано в 2016 году. На сегодняшний день Общество обеспечивает комплексные поставки для крупнейших строек страны.
+                    Ассортимент снабжения <strong>ООО «РТС»</strong> включает в себя весь спектр услуг по поставкам материалов и товаров, необходимых для возведения промышленного объекта
+                    — от общестроительных материалов, таких как пиломатериалы, железобетонные  изделия, лакокрасочная продукция до высокотехнологичного оборудования
+                    (электротехническое оборудование, запорная арматура, системы вентиляции и др.)
+                </p>
+                <p class="mb-3">
+                    Компания <strong>ООО «РТС»</strong> обладает большим опытом в производстве и поставке металлоконструкций, в том числе с антикоррозийным покрытием.
+                    А также работает в тандеме с крупнейшими российскими производителями металлоконструкций.
+                </p>
+                <p class="mb-4">
+                    Команда высококвалифицированных сотрудников <strong>ООО «РТС»</strong> способна рассчитать и осуществить поставку любых материалов в любую точку Российской Федерации в сжатые сроки с выгодой для Заказчика.
+                </p>
+            </div>
+            <div class="row __special__padding bg-white">
+            </div>
+            <div id="our_advantages" class="bg-white w-100 text-center py-2 __special__padding">
+                <h3 class="text-uppercase font-weight-bolder mb-5">Наши преимущества</h3>
+                <div class="row mb-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/trophy.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">Профессионалы</p>
+                            <p class="lead text-center">Команда профессионалов с большим опытом работы в сфере поставок</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/shoppingbasket.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">Ассортимент</p>
+                            <p class="lead text-center">Широкий ассортимент: от метизов до высокотехнологичного оборудования</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/worldwide.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">География</p>
+                            <p class="lead text-center">Опыт поставок от Калининграда до Благовещенска и от Ямала до Краснодара</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/hourglass.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">Кредитование поставок</p>
+                            <p class="lead text-center">Возможность поставок с отсрочкой платежа</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/handshake.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">Дистрибуция</p>
+                            <p class="lead text-center">Договоры с основными производителями строительных материалов в РФ</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 py-1 py-sm-1 py-md-2 py-lg-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="images/circularclock.png" alt="No picture">
+                            <p class="text-uppercase font-weight-bold text-dark mb-2 mt-4">Точность</p>
+                            <p class="lead text-center">Поставки осуществляются с точным соблюдением сроков</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="assortment" class="bg-white text-center py-2 __assort__padding">
+                <h3 class="text-uppercase font-weight-bolder">Ассортимент поставок</h3>
+                <div class="p-1">
+                    <div class="row">
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#metallconstrModalCenter">
+                            <img src="images/metallconstr.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                Металлоконструкции
+                            </div>
+                            <div class="modal fade" id="metallconstrModalCenter" tabindex="-1" role="dialog" aria-labelledby="metallconstrModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="metallconstrModal">Металлоконструкции</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/metallconstr.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                Наша организация готова осуществить производство и монтаж металлоконструкций любой сложности.
+                                                От  отдельных конструктивных элементов (балка, двутавр, швеллер и т.д.) до металлоконструкций ферм.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#jbiModalCenter">
+                            <img src="images/jbi.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                ЖБИ-изделия
+                            </div>
+                            <div class="modal fade" id="jbiModalCenter" tabindex="-1" role="dialog" aria-labelledby="jbiModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="jbiModal">ЖБИ-изделия</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/jbi.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                ООО "РТС" сотрудничает с крупнейшими заводами-изготовителями ЖБИ-изделий и
+                                                готово осуществить поставку широкого ассортимента железобетонных изделий,
+                                                предназначенных для использования в различных сферах строительства.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#pipesModalCenter">
+                            <img src="images/pipes.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                Трубный прокат
+                            </div>
+                            <div class="modal fade" id="pipesModalCenter" tabindex="-1" role="dialog" aria-labelledby="pipesModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="pipesModal">Трубный прокат</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/pipes.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                Ни одна из отраслей производства не обходится без использования трубной продукции.
+                                                Компания "Рустехсервис" готова предложить своим Заказчикам трубы и профили из различных материалов
+                                                (металл, пластик, полиэтилен, хризотилцемент) изготовленных с применением различных технологий
+                                                (прокат, литье, сварка, прессование).
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#metizModalCenter">
+                            <img src="images/metiz.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                Метизы
+                            </div>
+                            <div class="modal fade" id="metizModalCenter" tabindex="-1" role="dialog" aria-labelledby="metizModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="metizModal">Метизы</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/metiz.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                Наш ассортимент крепежа и другой метизной продукции адаптирован под запросы любых партнеров.
+                                                Все крепёжные изделия имеют высокий стандарт качества, вся продукция строго соответствует
+                                                ГОСТ и DIN и может применяться как в быту так и в промышленности.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#armaturaModalCenter">
+                            <img src="images/armatura.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                Запорная арматура
+                            </div>
+                            <div class="modal fade" id="armaturaModalCenter" tabindex="-1" role="dialog" aria-labelledby="armaturaModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="armaturaModal">Запорная арматура</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/armatura.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                Компания «Рустехсервис» в кратчайшие сроки осуществит поставку запорной арматуры в соответствии с Вашим запросом.
+                                                Вся продукция сопровождается необходимой документацией.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container p-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-toggle="modal" data-target="#pilomaterialsModalCenter">
+                            <img src="images/derevo.jpg" alt="No picture" class="assort-image w-100">
+                            <div class="px-3 position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                Пиломатериалы
+                            </div>
+                            <div class="modal fade" id="pilomaterialsModalCenter" tabindex="-1" role="dialog" aria-labelledby="pilomaterialsModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark">
+                                            <h5 class="modal-title text-white" id="pilomaterialsModal">Пиломатериалы</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="text-white" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="images/derevo.jpg" alt="No picture" class="assort-image w-100 mb-5">
+                                            <p class="text-left">
+                                                Ассортиментный ряд ООО «РТС» включает в себя пиломатериалы различных сортов и пород древесины.
+                                                Возможна как поставка типовых размеров так и изготовление под заказ.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer bg-dark">
+                                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                                <p class="text-white m-0 p-2 w-50">
+                                                    По вопросам поставок Вы можете связаться с нами:
+                                                </p>
+                                                <div class="d-flex flex-column justify-content-between align-items-center w-50">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-phone.png">
+                                                        <p class="text-white m-0">8(499)123-45-67</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <img class="img-in-modal py-1" alt="no phone" src="images/header-email.png">
+                                                        <p class="text-white m-0">email@rts.ru</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="__footer_padding">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <iframe class="w-100 py-2" src="https://yandex.ru/map-widget/v1/?um=constructor%3A176d4dcdfb4e2f4f9832eff9921a5492bbf399335b93b5ce8e3e5246b52c9c60&amp;source=constructor" width="500" height="500" frameborder="0"></iframe>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5 d-flex flex-column justify-content-around">
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                        <img class="p-1" alt="no icon" src="images/footer-phone.png">
+                        <p class="lead text-white pl-1 pl-sm-2 pl-md-3 mb-1">8(499)123-45-67</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                        <img class="p-1" alt="no icon" src="images/footer-email.png">
+                        <p class="lead text-white pl-1 pl-sm-2 pl-md-3 mb-1">email@rts.ru</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-start">
+                        <img class="p-1" alt="no icon" src="images/footer-maps.png">
+                        <p class="lead text-white pl-1 pl-sm-2 pl-md-3 mb-1" id="geography-text">Санкт-Петербург, ул.
+                            Маршала Говорова, д. 35, корпус 4, литер И, помещение 30Н, оф. 807</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <p class="alert alert-light" id="alert">Спасибо! Сообщение успешно отправлено.</p>
+                    <p id="questions" class="w-100 text-center">По вопросам сотрудничества:</p>
+                    <form method="post" action="mailing.php" class="d-flex flex-column" name="cooperation-form">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 py-0 py-lg-2">
+                                <input class="border-0 rounded-0 mb-1 form-control col-12" type="text" name="fullname"
+                                       id="form_fullname" placeholder="ФИО" required>
+                                <input class="border-0 rounded-0 mb-1 form-control col-12" type="email" name="email"
+                                       id="form_email" placeholder="Email" required>
+                                <input class="border-0 rounded-0 mb-1 form-control col-12" type="tel" name="phonenum"
+                                       id="form_phonenum" placeholder="Телефон" required>
+                                <input class="border-0 rounded-0 mb-1 mb-lg-0 form-control col-12" type="text"
+                                       name="theme" id="form_theme" placeholder="Тема" required>
+                            </div>
+                            <div class="col-12 col-lg-6 py-0 py-lg-2">
+                                <textarea class="border-0 rounded-0 form-control col-12 h-100" name="message"
+                                          id="form_message" placeholder="Сообщение" required></textarea>
+                            </div>
+                            <div class="col-12 py-2">
+                                <button type="submit" class="btn btn-block btn-light align-self-end">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/smooth.js"></script>
+</body>
+</html>

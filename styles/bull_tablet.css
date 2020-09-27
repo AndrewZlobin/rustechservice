@@ -1,0 +1,128 @@
+@media (max-width: 991.98px) {
+    .bull-top__nav {
+        display: none;
+    }
+
+    /* Section with big image/logo */
+    .bull-top__image-container {
+        padding-top: 55px;
+    }
+
+    /*Burger button*/
+
+    .bull-top__burger {
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #414141;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /* Burger menu */
+    .bull-top__menu-open {
+        background-color: #252525;
+        z-index: 10000;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bull-top__menu-open > .bull-top__logo {
+        background-color: #ffffff;
+    }
+
+    .bull-top__menu-open > .bull-top__nav {
+        display: none;
+    }
+
+    .bull-top__nav-mobile {
+        display: grid;
+        grid-template-rows: 2fr repeat(4, 1fr);
+        grid-gap: 15px;
+        padding-top: 5%;
+    }
+
+    .bull-top__nav-mobile:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        color: #fbba05;
+        background-color: #fbba05;
+        top: 20%;
+    }
+
+    .bull-top__nav-mobile > a {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 5%;
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+
+    .bull-top__nav-mobile > a:first-child {
+        position: relative;
+        text-align: center;
+        margin: 0 auto 0;
+    }
+
+    .bull-bucket-options__list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /*Section for slider*/
+
+    .bull-slider-navigation__container {
+        margin: 0 8.333333% 0;
+    }
+
+    .bull-industries__cards {
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 50px;
+    }
+
+    .bull-parallax__container {
+        max-width: 65%;
+    }
+
+    .bull-footer__map-title,
+    .bull-footer__map-address,
+    .bull-footer__form-title,
+    .bull-footer__form-advise {
+        text-align: center;
+    }
+
+    .bull-footer__form-grid {
+        grid-template-columns: 30% 1fr;
+    }
+
+    .bull-footer__form-title,
+    .bull-footer__form-advise,
+    .bull-footer__form-submit {
+        margin: 0 auto 0;
+    }
+
+    .bull-contacts__list {
+        max-width: 50%;
+    }
+}

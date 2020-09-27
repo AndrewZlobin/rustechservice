@@ -1,0 +1,50 @@
+@media (max-width: 575.98px) {
+    .bull-top__nav {
+        display: none;
+    }
+
+    .slick-track > .bull-slider-nav__image {
+        border-right: 1px solid #bebebe;
+        border-left: 1px solid #bebebe;
+    }
+
+    .slick-track > .bull-slider-nav__image {
+        border: none;
+    }
+
+    .bull-bucket-options__list {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .bull-industries__cards {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 30px;
+    }
+
+    .bull-parallax__container {
+        max-width: 90%;
+    }
+
+    .bull-footer__map-title,
+    .bull-footer__map-address,
+    .bull-footer__form-title,
+    .bull-footer__form-advise {
+        text-align: center;
+    }
+
+    .bull-footer__form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bull-footer__form-title,
+    .bull-footer__form-advise,
+    .bull-footer__form-submit {
+        margin: 0 auto 0;
+    }
+
+    .bull-contacts__list {
+        max-width: 75%;
+    }
+}

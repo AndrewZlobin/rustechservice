@@ -1,0 +1,47 @@
+@media (max-width: 1199.98px) {
+    .bull-top__nav {
+        display: grid;
+    }
+
+    /* Section with big image/logo */
+    .bull-top__image-container {
+        padding-top: 127px;
+    }
+
+    .bull-bucket-options__list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .bull-industries__cards {
+        grid-template-columns: repeat(4, minmax(50px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+
+    .bull-parallax__container {
+        max-width: 65%;
+    }
+
+    .bull-footer__map-title,
+    .bull-footer__map-address,
+    .bull-footer__form-title,
+    .bull-footer__form-advise {
+        text-align: left;
+    }
+
+    .bull-footer__form-grid {
+        grid-template-columns: 33% 1fr;
+    }
+
+    .bull-footer__form-title,
+    .bull-footer__form-advise,
+    .bull-footer__form-submit {
+        margin-left: 33%;
+        margin-right: 0;
+    }
+
+    .bull-contacts__list {
+        max-width: 50%;
+    }
+}

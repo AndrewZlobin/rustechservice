@@ -1,0 +1,399 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.__special__padding {
+    padding: 0 18.75%;
+}
+
+.__assort__padding {
+    padding: 0 17.25%;
+}
+
+.__footer_padding {
+    padding: 2% 17.25% 12.3%;
+}
+
+.__header__contacts {
+    background: #3e3e40;
+    height: 100%;
+    max-height: 3.125rem;
+}
+
+.__header__contacts > img {
+    height: auto;
+    width: 3.3%;
+}
+
+.__header__contacts > img:last-of-type {
+    margin-left: 11%;
+}
+
+.__header__contacts > p {
+    color: #ffffff;
+    margin: 0 0 0 4%;
+    font-size: 100%;
+}
+
+.__header__carousel {
+    height: 49.25rem;
+    max-height: 49.25rem;
+    width: 100%;
+}
+
+img.__header__carousel {
+    filter: brightness(0.55);
+    object-fit: cover;
+    object-position: center;
+}
+
+#navbar {
+    margin: 0;
+}
+
+#navbar a.text-decoration-none {
+    font-size: 140%;
+}
+
+.hover-12:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: #fb2823;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s;
+}
+.hover-12:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: #fb2823;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+.hover-12:hover:before {
+    transform-origin: top right;
+    transform: scaleX(1);
+}
+.hover-12:hover:after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+#rts-carousel > a {
+    width: 5%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 25%;
+    top: 25%;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption > h5 {
+    font-size: 352%;
+    font-weight: bold;
+    color: #ffc035;
+}
+
+.carousel-caption > p {
+    font-size: 352%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#main_section {
+    position: relative;
+}
+#main_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    filter: opacity(30%);
+}
+#main_section > div.col-12 {
+    position: relative;
+}
+
+#main_section h3.text-uppercase {
+    color: #00439e;
+    font-size: 190%;
+    margin: 3% 0 1.5%;
+}
+
+#main_section > div > div:first-of-type {
+    margin: 11% 0;
+}
+
+#main_section > div > div:last-of-type {
+    margin-top: 11%;
+}
+
+#main_section #our_advantages img {
+    max-width: 45.175%;
+}
+
+#about_us > p {
+    font-size: 150%;
+}
+
+.assort-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    filter: brightness(1);
+    transform: rotateY(0deg);
+}
+
+.image-container > div.position-absolute {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    color: #ffffff;
+}
+
+.image-container > div.position-absolute:hover {
+    cursor: pointer;
+}
+
+.img-in-modal {
+    max-width: 15%;
+    max-height: 15%;
+}
+
+#footer {
+    margin-top: 12.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#alert {
+    display: none;
+}
+
+#questions {
+    font-size: 175%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#footer input,
+#footer textarea{
+    font-size: 100%;
+}
+
+::placeholder {
+    color: #787878;
+    font-size: 100%;
+    font-style: italic;
+}
+
+#footer img {
+    max-width: 12.5%;
+    max-height: 12.5%;
+}
+
+#footer-right-content p {
+    font-size: 128.4%;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .__special__padding {
+        padding: 0 15%;
+    }
+
+    .__assort__padding {
+        padding: 0 13.8%;
+    }
+
+    .__footer_padding {
+        padding: 2% 13.8% 12.3%;
+    }
+
+    #navbar a.text-decoration-none {
+    font-size: 125%;
+    }
+
+    .carousel-caption > h5 {
+        font-size: 300%;
+    }
+
+    .carousel-caption > p {
+        font-size: 300%;
+    }
+
+    #about_us > p {
+        font-size: 140%;
+    }
+
+    #footer img {
+        max-width: 12.5%;
+        max-height: 12.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .__special__padding {
+        padding: 0 11.25%;
+    }
+
+    .__assort__padding {
+        padding: 0 10.35%;
+    }
+
+    .__footer_padding {
+        padding: 2% 10.35% 12.3%;
+    }
+
+    #navbar a.text-decoration-none {
+    font-size: 115%;
+    }
+
+    #navbar-elements {
+        display: none;
+    }
+
+    .carousel-caption > h5 {
+        font-size: 250%;
+    }
+
+    .carousel-caption > p {
+        font-size: 250%;
+    }
+
+    #about_us > p {
+        font-size: 130%;
+    }
+
+    #main_section #our_advantages img {
+        max-width: 30%;
+    }
+
+    #footer img {
+        max-width: 6%;
+        max-height: 6%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .__special__padding {
+        padding: 0 7.5%;
+    }
+
+    .__assort__padding {
+        padding: 0 6.9%;
+    }
+
+    .__footer_padding {
+        padding: 2% 6.9% 12.3%;
+    }
+
+    #navbar a.text-decoration-none {
+    font-size: 140%;
+    }
+
+    #navbar-elements {
+        display: none;
+    }
+
+    .carousel-caption > h5 {
+        font-size: 200%;
+    }
+
+    .carousel-caption > p {
+        font-size: 200%;
+    }
+
+    #about_us > p {
+        font-size: 120%;
+    }
+
+    #main_section #our_advantages img {
+        max-width: 25%;
+    }
+
+    #footer img {
+        max-width: 7.5%;
+        max-height: 7.5%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .__special__padding {
+        padding: 0 3.75%;
+    }
+
+    .__assort__padding {
+        padding: 0 3.45%;
+    }
+
+    .__footer_padding {
+        padding: 2% 3.45% 12.3%;
+    }
+
+    #navbar a.text-decoration-none {
+    font-size: 140%;
+    }
+
+    #navbar-elements {
+        display: none;
+    }
+
+    .carousel-caption > h5 {
+        font-size: 150%;
+    }
+
+    .carousel-caption > p {
+        font-size: 150%;
+    }
+
+    #about_us > p {
+        font-size: 110%;
+    }
+
+    #main_section #our_advantages img {
+        max-width: 25%;
+    }
+
+    #footer img {
+        max-width: 10%;
+        max-height: 10%;
+    }
+}

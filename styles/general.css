@@ -1,0 +1,89 @@
+body, html {
+    height: 200vh;
+    margin: 0;
+    font-family: pragmaticacyrillic, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    background-image: url("../images/background.jpg");
+    min-height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#navbar {
+    height: 15%;
+}
+
+#navbar a {
+    font-size: 150%;
+}
+
+#main_section > div > div {
+    margin: 10% 0;
+}
+
+#main_section #our_advantages img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#main_section > div.col-12 > div.bg-white > h3,
+#contacts > h3 {
+    color: #1c459a;
+    background-image: linear-gradient(to bottom, red 33%, transparent 33%, transparent 66%);
+    background-position: 0 1.03em;
+    background-repeat: repeat-x;
+    background-size: 2px 6px;
+    display: inline;
+}
+
+#our_advantages > div.row > div.d-flex {
+    height: 30rem;
+    max-height: 50%;
+}
+
+.assort-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.text-in-center {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-container:hover .assort-image {
+    opacity: 0.3;
+}
+
+.image-container:hover .text-in-center {
+    opacity: 1;
+}
+
+.text-itself {
+    background-color: whitesmoke;
+    color: rgba(255, 0, 0, 0.91);
+    border-radius: 7.5%;
+    font-size: 16px;
+    padding: 16px 32px;
+}
